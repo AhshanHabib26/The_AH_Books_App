@@ -1,0 +1,98 @@
+/* Common CSS Style  */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Area Section Style Code Start Here  */
+.header_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_area img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+.header_area h1{
+    font-size: 38px;
+    color: #363636;
+    font-weight: 600;
+}
+.header_area span{
+    font-size: 38px;
+    color: rgb(255, 99, 71);
+}
+
+/* Input Area Section Style Code Start Here  */
+.input_section{
+    text-align: center;
+}
+.input_box input[type="text"]{
+    width: 50%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #fcc4ba;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-left: -4px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 0;
+}
+.input_box input[type="button"]{
+    width: 15%;
+    height: 40px;
+    border: 0;
+    font-size: 15px;
+    background-color: #fc7058;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.input_box button{
+    width: 15%;
+    height: 40px;
+    border: 0;
+    font-size: 16px;
+    background-color: #fc7058;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.show_section{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 30px;
+}
+.display h1{
+    font-size: 22px;
+    color: #363636;
+
+}
+/* Responsive For Tablet & Mobile Device  */
+
+@media screen  and (max-width: 998px){
+    .input_box input[type="button"]{ width: 20%;}
+}
+@media screen  and (max-width: 730px){
+    .input_box input[type="button"]{ width: 25%;}
+    .input_box button{ width: 25%;}
+}
+@media screen  and (max-width: 514px){
+    .input_box input[type="button"]{ width: 30%;}
+    .input_box button{ width: 25%;}
+}
+@media screen  and (max-width: 422px){
+    .header_area h1{font-size: 28px;}
+    .header_area span{ font-size: 28px;}
+    .input_section{text-align: left;}
+    .input_box button{ width: 38%;}
+    .input_box input[type="button"]{ width: 38%;}
+    .input_box input[type="text"]{ width: 60%;}
+}
+
